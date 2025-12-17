@@ -26,7 +26,7 @@ body{
  margin: 0 auto;
 }
 #topo{
-    min-height: 1025px;
+    height: 1024px;
     padding: 20px 40px;
     background-image: url(Imagens/Captura\ de\ tela\ 2025-10-19\ 113042.png);
     background-size: cover;
@@ -73,6 +73,9 @@ body{
     justify-content: space-around;
     align-items: center;
     height: 100%;
+    gap: 80px;
+    text-align: center;
+    margin-left: 300px;
 }
 #inicio-topo a {
     font-size: 1.7rem;
@@ -86,15 +89,12 @@ body{
 }
 .grid-topo > ul{
      color: var(--Amarelo-Dourado);
-     font-size: 1.8rem;
+     font-size: 1.5rem;
      grid-column: 1;
      grid-column-start: 1;
     grid-column-end:3 ;
     margin-top: 28px;
     line-height: 1.8;
-}
-.sociais{
-
 }
 #info{
  background-image: url(Imagens/imagem.escola.png);
@@ -117,7 +117,7 @@ padding: 20px 10px;
 }
 #info .icones{
     display: grid;
-    margin: 20px;
+    margin-bottom: -260px;
     grid-template-columns: repeat(4, 1fr);
 }
 .icones article{
@@ -167,6 +167,13 @@ padding: 20px 10px;
     background-color: var(--Bege);
     min-height: 100%;
     width: 100%;
+    padding-bottom: -200px;
+  
+  
+    
+}
+.sociais{
+    padding-bottom: 150px;
 }
 .projeto-em-andamento{
 text-align: center;
@@ -176,13 +183,13 @@ background-color: var(--Dourado);
     width:100% ;
     height:150px ;
     font-family: var(--fonte-titulo);
-    margin: 0 auto;
+   
 }
 .andamento{
-    padding: 20px 10px;
     grid-template-columns: 1fr 1fr;
     grid-row: 1fr 1fr 1fr;
     display: grid;
+  
 }
 .andamento h3{
     background-color: var(--Cinza);
@@ -194,12 +201,10 @@ border-radius: 10px;
     
 }
 .textos1{
-     background-color: var(--Amarelo-ouro);
   color:var(--Preto);
   padding: 10px;
  border-radius: 3px;
  text-align: auto;
- border:2px solid black;
  border-radius: 4px;
  height: 200px;
  grid-row: 2;
@@ -223,6 +228,7 @@ border-radius: 10px;
   grid-column: 2;
   display: grid;
 }
+
 .foto2{
    margin-top: 170px;
    border: 2px solid black;
@@ -324,11 +330,23 @@ height:150px ;
     margin-bottom: 50px;
 }
 #img1{
+    width: 600px;
+    height: 500px;
+    margin-bottom: 200px;
     
 }
 #img2{
-    margin-left: 36px;
+    margin-left: 50px;
+    margin-bottom: 200px;
+    width: 600px;
+    height: 500px;
 }
+#botaoentre{
+    width: 300px;
+    margin-top: -100px;
+    margin-right: 20px;
+}
+
 .juntos{
   text-align: center;
 color: var(--Branco);
@@ -376,37 +394,491 @@ background-color: var(--Dourado);
     border-radius: 3px;
    
 }
-#rodape{
-    background-color: #2D2B24;
-    display: flex;
-    width: 2000px;
-    height: 300px;
-}
-#meio{
-    background-color: #6A510B;
-    display: flex;
-    width: 2000px;
-    margin-left: -350px;
-    height: 80px;
-    margin-top: 90px;
-  
-}
-#meio h4{
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    color:  var(--Branco);
-}
-#meio h1{
-    margin-left: 500px;
-    margin-top: -60px;
-  
-}
-#redes{
- text-align: right;
- margin-left: 550px;
- margin-top: -35px;
-}
 #meio h3{
     color: var(--Branco);
+}
+#formmain{
+    background-color: #586369;
+    padding: 40px auto;
+}
+#form label{
+    background-color: var(--laranja);
+    border-radius: 10px;
+    padding: 2px 10px;
+}
+#formmain button{
+    width: 130px;
+    height: 50px;
+    font-size:30px ;
+    background-color:#A67F16;
+    font-weight: 900;
+    border-radius: 7px;
+    margin-top: 50px;
+}
+#form input{
+    margin: 15px auto;
+    width: 300px;
+    height: 30px;
+}
+#form{
+    background-color: var(--beje);
+    width: 500px;
+    margin:auto;
+    padding: 50px;
+    font-size: 30px;
+}
+#form h1{
+    font-size: 50px;
+}
+#form h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width:1024px){
+    .grid-topo img{
+        width: 150px;
+    }
+    #inicio-topo{
+        margin-left: -250px;
+    }
+    #inicio-topo a{
+        color: var(--Branco);
+        font-size: 1rem;
+        gap: 5px;
+        margin-left: -30px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .andamento{
+        display: flex;
+        flex-direction:column ;
+        gap: 50px;
+      
+    }
+    .foto1{
+        width: 550px;
+        margin-right: 50px;
+      margin-top: 5px;
+      
+    }
+    .foto1 img{
+        width: 500px;
+        margin-left: 10px;
+        height: 250px;
+
+
+    }
+    .foto2{
+        width: 200px;
+        margin-top: -60px;
+        width: 400px;
+        height: 250px;
+
+      
+    }
+    
+    .foto2 img{
+        margin-left: 50px;
+        width: 100px;
+        margin-top: -20px;
+    }
+    .texto2{
+        background-color: var(--Amarelo-ouro);
+        border:2px solid black;
+        height: 310px;
+        width: 480px;
+    }
+    
+
+    .icones img{ 
+        max-width: 190px; 
+         max-height: 190px;
+         margin-right: 0px;
+}
+
+.icones article {
+    max-width: 0px;
+    margin: 150px
+}
+.rev1{
+    background-color: var(--Amarelo-ouro);
+    border:2px solid black;
+}
+.textos1{
+    margin-left: 10px;
+}
+.revitalizacao{
+    align-items: center;
+    text-align: center;
+}
+
+.im1 img{
+    width: 400px;
+}
+.im2 img{
+    width: 400px;
+}
+.trabalho-titulo{
+    width: 1420px;
+}
+.trabalho-titulo > h2{
+    margin-left: 300px;
+}
+.oportunidades a{
+    margin-left: 0px;
+    margin: 0px auto;
+}
+#emprego{
+    height: 1500px;
+}
+#denunciar {
+    font-size: 1.7rem;
+}
+.juntos{
+    width: 1420px;
+    text-align: center;
+}
+.juntos h2{
+    margin-left: 350px;
+}
+.local{
+    margin-top: -100px;
+}
+#flex a{
+    margin-left: 30px;
+    margin-bottom: 200px;
+}
+#flex img{
+    width: 450px;
+}
+#img2{
+    height: 500px;
+}
+#comunidade{
+    height: 1800px;
+}
+#comunidade a{
+    margin-left: 300px;
+}
+#meio{
+    margin-top: 50px; 
+}
+#redes{
+    margin: 0px;
+    gap: 0px;
+}
+#redes a{
+    width: 20px;
+    margin-left: -50px;
+}
+.local p{
+     font-size: 20px;
+}
+.rodape{
+    margin: 0px;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: -50px;
+}
+#rodape{
+    background-color: var(--Preto);
+    height: 300px;
+}
+#gotham{
+    margin-top: 50px;
+    color: var(--Branco);
+}
+#meio{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: var(--Marrom);
+    height: 100px;
+}
+#meio img{
+    margin-left: 80px;
+    margin-top: -50px;
+}
+    }
+@media  screen and (max-width:768px){
+    #inicio-topo a {
+        font-size: 0.8rem;
+        color: var(--Branco);
+        text-decoration: none;
+       margin-right: 20px;
+      display: flex;
+      width: 10px;
+      margin-left: -10px;
+
+
+}
+    #inicio-topo{
+        margin-left: -280px;
+    }
+   .grid-topo h2{
+        font-size: 3.5rem;
+        margin-bottom: 30px;
+}
+
+.grid-topo h3{
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+.grid-topo > ul{
+    color: var(--Amarelo-Dourado);
+    font-size: 1.7rem;
+    grid-column: 1;
+    grid-column-start: 1;
+   grid-column-end:3 ;
+   margin-bottom: 28px;
+   line-height: 1.8;
+
+}
+.grid-topo img{
+    margin-right: 20px;
+    padding-right: -30px;
+}
+#info h2{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+    color:var(--Branco);
+    background-color: var(--Dourado) ;
+    width: 106%;
+    padding: 50px;
+    height: 170px;
+    margin: -39px;
+}
+#info .icones{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.sociais{
+height: 400px;
+
+}
+.icones article{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    margin: 60px;
+    margin-left: -40px;
+    margin-bottom: 300px;
+    max-width: 250px ;
+    max-height: 200px;
+
+}
+.icones img{
+    max-width: 160px;
+    max-height: 170px;
+    margin-right: 0px;
+    text-align: center;
+    margin: 5px;
+    
+}
+.icones h4{
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--Branco);
+    background-color: var(--Verde-Escuro);
+    width:110px ;
+    height:35px ;
+    padding: 4px;
+
+
+}
+.icones a{
+    font-size: 1.2rem;
+    font-family: var(--fonte-titulo);
+    text-decoration: none;
+}
+.icones{
+    margin-left: 100px;
+}
+.corcinza a > h4{
+    color: var(--Verde-Escuro);
+    background-color:#D9D9D9 ;
+    height:40px ;
+    width:190px;
+    padding: 9px;
+    text-align: center;
+    margin: 32px;
+    margin-top: 10px;
+}
+#comunidade{
+    height: 1650px;
+}
+.trabalho-titulo{
+    text-align: center;
+color: var(--Branco);
+font-size: 1.8rem;
+background-color: var(--Dourado);
+width:1165px ;
+height:130px ;
+    font-family: var(--fonte-titulo);
+    margin: 0;
+    margin-left: -400px;
+}
+.oportunidades img{
+    width: 140px;
+}
+
+.oportunidades h3{
+    font-size: 1.6rem;
+}
+.oportunidades p{
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+.oportunidades a{
+    max-width: 660px;
+    height: 100px;
+   padding: -100px;
+
+}
+#flex img{
+    width: 370px;
+    margin: 0px;
+    height: 350px;
+    margin-left: 10px;
+    margin-top: 20px;
+}    
+#botaoentre{
+    margin: 0px;
+    margin: 20px auto;
+    margin-right: 140px;
+}
+.juntos{
+    margin: 0px;
+    width: 768px;
+}
+.juntos h2{
+    margin: 0px;
+}
+#emprego{
+    height: 900px;
+}
+}
+@media screen and (max-width:425px){
+    .grid-topo img{
+        width:140px;
+    }
+    #inicio-topo ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        margin-right: 10px;
+    }
+    #inicio-topo a{
+        margin-left: 5px;
+        font-size: 0.9rem;
+        margin: -25px auto;
+    }
+    .grid-topo h2{
+        font-size: 2rem;
+        width: 300px;
+        margin:20px auto;
+        margin-left: -50px;
+    }
+    #info .icones{
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-left: 0px;
+    }
+    #info .icones article{
+        margin: 0px;
+        margin: 10px auto;
+    }
+    #info h2{
+        font-size: 3rem;
+        width: 425px;
+        margin: 20px;
+        margin-left: -10px;
+    }
+    #info{
+        height: 1000px;
+        background-repeat: repeat;
+        background-size: auto;
+    }
+    .foto1{
+        margin-right:20px;
+        width: 370px;
+    }
+    .foto1 img{
+        width: 350px;
+        margin-left:0px;
+    }
+    .revitalizacao h3{
+        height: 110px;
+        margin-top: 300px;
+    }
+    .im1{
+        flex-wrap: wrap;
+    }
+    .im1 img{
+        width: 320px;
+    }
+    .trabalho-titulo{
+        width:425px;
+        margin: 0px;
+    }
+    .trabalho-titulo h2{
+        margin: 0px;
+    }
+    #emprego{
+        height: 2200px;
+    }
+    .oportunidades a{
+        font-size: 30px;
+        width: 400px;
+    }
+    #dado1 h4{
+        width:100px;
+    }
+    #dado2 h4{
+        width: 100px;
+    }
+    .juntos{
+        margin: 0px;
+        width: 425px;
+    }
+    .juntos h2{
+        font-size: 2.5rem;
+        margin: 0px;
+    }
+    .local p{
+        font-size: 20px;
+        margin: 0px;
+        margin-top: 100px;
+    }
+    .solidariedade strong li{
+        font-size: 20px;
+    }
+    #flex img{
+        width: 400px;
+        height: 350px;
+        margin: 0px;
+        margin: 5px;
+        margin-left: 12px;
+    }
+    #flex a{
+        margin: 0px;
+        margin: 5px auto;
+    }
+    #comunidade{
+        height: 1650px;
+    }
+    #gogo-baixo{
+        width: 70px;
+        margin-bottom:-60px;
+    }
+    #rodape{
+        margin-top: -50px;
+    }
+    #ulli{
+        font-size:24px ;
+    }
 }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Gotham City</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet " href="estilo.css">
+   
+</head>
+
+<body>
+    <main id="formmain">
+        <div id="form">
+        <h1 class="nosso">Formulário Prefeitura de Gotham City.</h1> <br> <br>
+        <h2 class="nosso">Nosso Contato com Você!</h2>
+        <br> <br>
+        <form action="prefeitura.php" method="post">
+            <label for="nome">Nome:</label>
+            <br>
+            <input type="text" name="nome" id="nome" required>
+            <br>
+            <label for="mail">E-mail:</label><br>
+            <input type="email" name="mail" id="mail"> 
+            <br>
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" name="telefone" id="telefone">
+            <br>
+            <label for="comentario">Motivo da Mensagem: </label><br><br>
+            <textarea name="comentario" id="comentario" rows="8" cols="20"></textarea>
+            <br>
+            <label for="trab">Cursos Disponíveis para trabalho:  </label><br>
+            <select name="trabalho" id="trabalho">
+            <option value="Saúde Púbica"selected>Saúde Pública</option>
+            <option value="Educação">Educação</option>
+            <option value="Construção e Manutenção de Obras">Construção e Manutenção de Obras</option>
+            <option value="Porteiro">Nenhum</option>
+        </select>
+        <br>
+        <button>Enviar</button>
+        </form>
+        </div>
+    </main>
+    </body>
+    </html>

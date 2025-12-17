@@ -1,12 +1,11 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <title>Site Prefeitura de Gotham City</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="estilo.css">
-       <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
     </head>
     <body>
         <header id="topo">
@@ -19,13 +18,14 @@
                 <li> <a href="#emprego">Empregos e Oportunidades</a> </li>
                 <li> <a href="#denuncias">Denúncias Online</a> </li>
                 <li> <a href="#comunidade">Participação Comunitária</a> </li>
+                <li> <a href="contato.html"> Nosso Contato</a> </li>
                 </ul>
             </nav>
             
             <h2>Prefeitura de <span class="detalhe-amarelo">Gotham City</span></h2>
             <br>
-            <h3><i>Construindo um <span class="detalhe-dourado">seguro e sustentável</span>.</i></h3>
-            <ul>
+            <h3><i>Construindo um <span class="detalhe-dourado"> Futuro seguro e sustentável</span>.</i></h3>
+            <ul id="ulli">
            <li>Segurança e Infraestrutura → obras, iluminação pública, policiamento.</li>
                 <li>Projetos Sociais → escolas, saúde, assistência social.</li>
                <li>Investimentos → oportunidades para empresas.</li>
@@ -38,7 +38,7 @@
                <div class="container sociais">
                      <br><h2>Projetos Sociais</h2>
                     <div class="icones">
-                        <article>
+                        <article >
                             <img src="Imagens/icone.chapeu.png" style="width: 610px; height: 610px;">
                             <div class="cor-icones">
                             <a href="" class="botao-cinza"><h4>Escola</h4></a> 
@@ -49,7 +49,7 @@
                             <a href="" class="botao-verde"><h4>Saúde</h4></a>
                         </article>
                          <article>
-                            <img src="Imagens/icone.assistencia.png"style="width: 610px; height: 610px;" >
+                            <img src="Imagens/icone.assistencia.png"style="width: 610px; height: 610px; " >
                             <div class="corcinza">
                             <a href="" class="bt-cinza"><h4>Assis.Social</h4></a>
                             </div>
@@ -64,8 +64,9 @@
                         </div>
                         <div class="andamento">
                             <article>
+                                <div class="rev1">
                                 <div class="foto1">
-                                <img src="Imagens/imagem.projeto.png" style="width: 500px; height:350px;">
+                                <img src="Imagens/imagem.projeto.png" >
                                 </div>
                                 <div class="revitalizacao">
                             <h3>🏗️ Revitalização da Praça Central</h3>
@@ -78,27 +79,40 @@
                               <li><h4>Status: Em execução – <br>previsão de entrega em <br>Dezembro/2025.</h4> </li>
                             </ul>
                             </div>
+                        </div>
                             </article>
                             <article>
-                                <div class="foto2">
-                                <img src="imagens/imagem.rua.png"style="width: 500px; height:350px;" >  
+                                <div class="rev1">
+                                <div class="foto1">
+                                <img src="imagens/imagem.rua.png" >  
                                 </div>                             
-                               <div class="texto2">
-                               <ul>
-                            <h3>🚧 Pavimentação de Ruas no <br> Bairro Jardim das Flores</h3>
-                            <li><h4>Objetivo: melhorar a <br> mobilidade urbana com <br> asfalto e drenagem. </h4> </li> <br>
+                                <div class="revitalizacao">
+                                <h3>🚧 Pavimentação de Ruas no <br> Bairro Jardim das Flores</h3>
+                                </div>
+                               <div class="textos1"> 
+                            <ul>
+                            <li><h4>Objetivo: melhorar a <br> mobilidade urbana com <br> asfalto e drenagem. </h4> </li> <br><br>
                                <li><h4> Status: 50% concluído.</h4> </li>
                                 </ul>
-                               </div>
+                            </div>
+                            </div>
                             </article>
-                             <article>
-                                <img src="Imagens/imagem.predio.png" style="width: 500px; height:350px;">
+                             <article >
+                                <div class="rev1">
+                                <div class="foto1">
+                                <img src="Imagens/imagem.predio.png">
+                                </div>
+                                <div class="revitalizacao">
+                                <h3>🏫 Construção de uma Nova <br> Escola Municipal </h3>
+                                </div>
+                                <div class="textos1">
                                 <ul>
-                            <h3>🏫 Construção de uma Nova <br> Escola Municipal </h3>
-                            <li><h4>Objetivo: ampliar a oferta de <br> vagas para o ensino <br>fundamental.</h4>
-                            <br>
-                            <li><h4>Status: Obra iniciada em <br> Agosto/2025.</h4></li>
-                        </ul>
+                                <li><h4>Objetivo: ampliar a oferta de <br> vagas para o ensino <br>fundamental.</h4>
+                                <br>
+                               <li><h4>Status: Obra iniciada em <br> Agosto/2025.</h4></li>
+                                </ul>
+                                </div>
+                                </div>
                             </article>
                         </div>
                     </div>
@@ -121,7 +135,7 @@
                                 <img src="Imagens/imagem.porteiro.png">
                             </article>
                             </div>
-                            <div class="im2">
+                            <div class="im1">
                                 <article>
                                  <h3><strong>12 vagas de emprego</strong></h3>
                                  <p>Engenharia da Àrea Civil</p>
@@ -145,9 +159,9 @@
                         <p>Nosso canal de denúncias garante sigilo e segurança para que você possa <br>
                         relatar problemas deforma rápida e eficaz. 
                         Sua participação é fundamental <br> para construirmos uma cidade melhor.</p>
-                        <div id="dado1"><h4>Descrição do problema:_________________________</h4></div>
-                        <div id="dado2"><h4>Localização:_____________________________________</h4></div>
-                        <div id="dado3"><h4>Telefone:________________________________________</h4></div>
+                        <div id="dado1"><h4>Descrição do problema:__________________<br>___________________________</h4></div>
+                        <div id="dado2"><h4>Localização:________________<br>___________________________</h4></div>
+                        <div id="dado3"><h4>Telefone:___________________<br>___________________________</h4></div>
                         <article id="anexo">
                             <h4>Anexar foto:</h4>
                             <h3>Anexo 1</h3>
@@ -186,9 +200,11 @@
                                      </strong>
                                     </ul>
                                 </div>
-                                    <img src="Imagens/imagem.criancas.png" style="width: 620px; height: 520px;" id="img1">
-                                    <img src="Imagens/imagem.campanha.png"  style="width: 620px; height: 520px;" id="img2">
-                                    <a href="" class="botaoentre"> <strong> Entre agora </strong></a>
+                                <div id="flex">
+                                    <img src="Imagens/imagem.criancas.png" id="img1">
+                                    <img src="Imagens/imagem.campanha.png" id="img2">
+                                    <a href="" id="botaoentre"> <strong id="botao"> Entre agora </strong></a>
+                                </div>
                              </article>
                         </div>
                     </div>
@@ -196,19 +212,13 @@
         </main>
         <footer id="rodape">
             <div class="container rodape">
-               
               <div id="meio">               
                 <h4>📍  Endereço: Avenida Centenario – Gotham City <br>
                     📞  Telefone: (77) 99867-8767 <br>
                     📧  Email: contato_GothamCity@gmail.com</h4>
-                    <h1><a href="index.html"></a> <img src="Imagens/image 1.png" id="gogo-baixo"></h1>
-                        <div id="redes">
-                            <a href=""> <img src="Imagens/icone.watshapp.png" id="insta"></a>
-                            <a href=""> <img src="Imagens/icone.insta.png" id="zap"></a>
-                        </div>
+                   <h1><a href="index.html"></a> <img src="Imagens/image 1.png" id="gogo-baixo"></h1>
             </div>
-                        <h3>Gotham City - Construindo um futuro seguro e responsável <br>
-                        com você!</h3>
+                <h3 id="gotham">Gotham City - Construindo um futuro seguro e responsável <br>com você!</h3>
             </div>
         </footer>
     </body>
